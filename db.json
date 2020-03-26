@@ -1,0 +1,64 @@
+{
+  "action": "config.network.view",
+  "payload": {
+    "conditions_and": [
+      {
+        "config": {
+          "dhcp": {
+            "apiKey": "dhcp",
+            "value": false
+          }
+        }
+      }
+    ],
+    "conditions_or": [],
+    "config": [
+      {
+        "apiKey": "ipAmperix",
+        "type": "IP",
+        "required": true,
+        "multiple": false,
+        "value": "10.10.23.43"
+      },
+      {
+        "apiKey": "netmask",
+        "type": "IP",
+        "required": true,
+        "multiple": false,
+        "value": "255.255.255.0"
+      },
+      {
+        "apiKey": "gateway",
+        "type": "IP",
+        "required": true,
+        "multiple": false,
+        "value": "10.10.23.1"
+      },
+      {
+        "apiKey": "primaryDNS",
+        "type": "IP",
+        "required": true,
+        "multiple": false,
+        "value": "8.8.8.8"
+      },
+      {
+        "apiKey": "secondaryDNS",
+        "type": "IP",
+        "required": true,
+        "multiple": false,
+        "value": "4.4.4.4"
+      }
+    ],
+    "configID": "c73441f5-ec66-434b-998b-7fe49226134a",
+    "dhcp": [
+      {
+        "apiKey": "dhcp",
+        "type": "BOOL",
+        "required": true,
+        "multiple": false,
+        "value": false
+      }
+    ]
+  },
+  "version": "v0.0.0-develop-a248083"
+}
